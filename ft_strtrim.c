@@ -6,18 +6,18 @@
 /*   By: sanhan <sanhan@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 19:25:23 by sanhan            #+#    #+#             */
-/*   Updated: 2020/03/02 16:38:21 by sanhan           ###   ########.fr       */
+/*   Updated: 2020/04/05 20:28:27 by sanhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	inSet(char s, char const *set)
+static int	in_set(char s, char const *set)
 {
 	int i;
 
 	i = 0;
-	while(set[i])
+	while (set[i])
 	{
 		if (set[i] == s)
 			return (1);
@@ -43,15 +43,15 @@ char		*ft_strtrim(char const *s1, char const *set)
 	end = ft_strlen(s1) - 1;
 	if (end < 0)
 		return (0);
-	while (s1[start] && inSet(s1[start], set))
+	while (s1[start] && in_set(s1[start], set))
 		start++;
 	if (start == end)
 	{
-		if(!(rtn = (char *)malloc(sizeof(char) * 1)))
+		if (!(rtn = (char *)malloc(sizeof(char) * 1)))
 			return (0);
 		return (finish(rtn, 0));
 	}
-	while (end > start && inSet(s1[end], set))
+	while (end > start && in_set(s1[end], set))
 		end--;
 	if (!(rtn = (char *)malloc(sizeof(char) * ((end - start + 1) + 1))))
 		return (0);
