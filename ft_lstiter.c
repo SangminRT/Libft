@@ -6,13 +6,13 @@
 /*   By: sanhan <sanhan@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 17:46:02 by sanhan            #+#    #+#             */
-/*   Updated: 2020/03/03 17:53:51 by sanhan           ###   ########.fr       */
+/*   Updated: 2020/04/06 09:07:16 by sanhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	while (lst)
 	{

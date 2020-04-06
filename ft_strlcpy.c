@@ -6,13 +6,13 @@
 /*   By: sanhan <sanhan@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 13:19:59 by sanhan            #+#    #+#             */
-/*   Updated: 2020/03/05 13:43:38 by sanhan           ###   ########.fr       */
+/*   Updated: 2020/04/06 09:05:44 by sanhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char * dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 	size_t	s_len;

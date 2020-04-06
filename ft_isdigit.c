@@ -6,13 +6,13 @@
 /*   By: sanhan <sanhan@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 17:42:26 by sanhan            #+#    #+#             */
-/*   Updated: 2020/02/28 14:05:59 by sanhan           ###   ########.fr       */
+/*   Updated: 2020/04/06 09:04:21 by sanhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }

@@ -6,13 +6,13 @@
 /*   By: sanhan <sanhan@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 15:45:40 by sanhan            #+#    #+#             */
-/*   Updated: 2020/03/05 14:58:22 by sanhan           ###   ########.fr       */
+/*   Updated: 2020/04/06 09:12:53 by sanhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	char	*rtn;
 	int		s_len;

@@ -6,7 +6,7 @@
 /*   By: sanhan <sanhan@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/26 17:52:20 by sanhan            #+#    #+#             */
-/*   Updated: 2020/02/28 20:46:20 by sanhan           ###   ########.fr       */
+/*   Updated: 2020/04/06 09:24:11 by sanhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-    void    *rtn;
+	void	*rtn;
 
-    if((rtn = (void *)malloc(count * size)) == 0)
-        return (0);
-    ft_memset(rtn, 0, count * size);
+	if ((rtn = (void *)malloc(count * size)) == 0)
+		return (0);
+	ft_memset(rtn, 0, count * size);
 	return (rtn);
 }
