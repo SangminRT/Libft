@@ -6,7 +6,7 @@
 /*   By: sanhan <sanhan@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 19:25:23 by sanhan            #+#    #+#             */
-/*   Updated: 2020/04/06 08:46:29 by sanhan           ###   ########.fr       */
+/*   Updated: 2020/04/13 11:30:30 by sanhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,9 @@ char		*ft_strtrim(char const *s1, char const *set)
 	int		i;
 
 	start = 0;
-	end = ft_strlen(s1) - 1;
-	if (end < 0)
+	if (!s1)
 		return (0);
+	end = ft_strlen(s1) - 1;
 	while (s1[start] && in_set(s1[start], set))
 		start++;
 	if (start == end)
