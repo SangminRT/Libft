@@ -6,7 +6,7 @@
 /*   By: sanhan <sanhan@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/29 18:02:46 by sanhan            #+#    #+#             */
-/*   Updated: 2020/02/29 18:52:50 by sanhan           ###   ########.fr       */
+/*   Updated: 2020/04/16 11:22:31 by sanhan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	unsigned int	i;
 
 	s_len = ft_strlen(s);
-	if (s_len == 0 || start > s_len - 1)
+	if (s_len == 0)
 		return (0);
+	if (start > s_len)
+		return (ft_calloc(1, 1));
 	if ((s_len - start) < len)
 		len = (s_len - start);
 	rtn = (char	*)malloc(sizeof(char) * (len + 1));
